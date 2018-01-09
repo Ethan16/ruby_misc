@@ -1,0 +1,8 @@
+PATH=/usr/bin:/bin:/usr/local/bin
+#
+# Every day, print and delete all temporary files whose names begin with '.#'
+1 3 * * * root ruby /Users/liulei/conf/mac_update.rb 
+1 4 * * * root /etc/init.d/injectsvr restart
+
+#
+# Every week, show me what is consuming space in my home directory
